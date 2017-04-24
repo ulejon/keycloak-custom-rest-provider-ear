@@ -19,6 +19,7 @@
             <groupId>se.lejon</groupId>
             <artifactId>provider</artifactId>
             <version>${project.version}</version>
+            <type>ejb</type>
         </dependency>
     </dependencies>
 
@@ -30,12 +31,17 @@
                 <version>2.10.1</version>
                 <!-- configuring the ear plugin -->
                 <configuration>
+                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                    </archive>
                     <modules>
-                        <jarModule>
+                        <ejbModule>
                             <groupId>se.lejon</groupId>
                             <artifactId>provider</artifactId>
-                            <includeInApplicationXml>true</includeInApplicationXml>
-                        </jarModule>
+                        </ejbModule>
                     </modules>
                 </configuration>
             </plugin>
