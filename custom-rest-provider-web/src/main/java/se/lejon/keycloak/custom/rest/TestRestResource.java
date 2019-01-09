@@ -1,4 +1,4 @@
-package se.lejon.keycloak.custom;
+package se.lejon.keycloak.custom.rest;
 
 import org.jboss.logging.Logger;
 import org.jboss.resteasy.annotations.cache.NoCache;

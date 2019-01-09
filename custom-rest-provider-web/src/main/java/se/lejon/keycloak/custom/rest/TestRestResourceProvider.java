@@ -1,4 +1,4 @@
-package se.lejon.keycloak.custom;
+package se.lejon.keycloak.custom.rest;
 
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.services.resource.RealmResourceProvider;
